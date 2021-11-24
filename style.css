@@ -1,0 +1,345 @@
+*,body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+html {
+  width: 100vw;
+  scroll-behavior: smooth;
+}
+.navbar {
+  width: 100vw;
+  background-color: blue;
+  height: 70px;
+  box-shadow: 0 3px 5px;
+}
+.navbar ul{
+  line-height: 70px;
+  display: flex;
+  list-style-type: none;
+  justify-content: flex-end;
+  margin-right: 30px;
+}
+.navbar .name{
+  align-self: flex-start;
+  margin-right: auto;
+  color: rgb(248, 227, 201);
+  font-family: cursive;
+  font-weight: bold;
+  font-size: 2.5rem;
+  padding-left: 1em;
+  text-shadow: 3px 3px 3px crimson;
+}
+.navbar ul li {
+  padding: 0 20px;
+  font-size: 1.7em;
+}
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+}
+.navbar ul li:not(:nth-child(1)):hover {
+  background-color: crimson;
+  cursor: pointer;
+}
+.hamburger{
+  position: relative;
+  display: none;
+  margin-left: .5em;
+  top: 1.2em;
+  width: 1.5em;
+  height: 0.2em;
+  border-radius: 3px;
+  background-color:rgb(235, 190, 137);
+}
+.hamburger::before{
+  display: block;
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 1.5em;
+  height: 0.2em;
+  border-radius: 3px;
+  background-color:rgb(235, 190, 137);
+}
+.hamburger::after{
+  display: block;
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 1em;
+  height: 0.2em;
+  border-radius: 3px;
+  background-color:rgb(235, 190, 137);
+}
+#btn{
+ width: 5rem;
+ padding: .2em;
+ border-radius: 5px;
+ background: transparent;
+ font-weight: bold;
+ color: crimson;
+ border: 2px solid crimson;
+}
+#btn:hover{
+  background: crimson;
+  color: white;
+  font-weight: normal;
+}
+
+.main {
+  text-align: center;
+  background-image:url(./1348-blue-digital-waves-wallpaper-2560x1600-customity.jpeg);
+  background-size: cover;
+  margin-top: .25em;
+  padding: 1em;
+}
+.main .image{
+  width: 21rem;
+  height: 21rem;
+  border-radius: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.main .image img{
+  width: 100%;
+  height: 100%;
+  margin-top: 1em;
+  object-fit: cover;
+}
+code {
+  color: blue;
+  font-size: 3em;
+  text-align: center;
+}
+.main2 {
+  background-color: rgb(219, 215, 215);
+  display: grid;
+  text-align: center;
+}
+.main2 > u > h2 {
+  margin-top: 1rem;
+  font-size: 3em;
+}
+.projects{
+  display: grid;
+  grid-template: repeat(2, 1fr)/repeat(3, 1fr);
+  grid-gap: 2em;
+  padding: 3em;
+}
+img {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+}
+img:hover{
+  transform: scale(1.1);
+  border: 3px solid skyblue;
+}
+
+.main3 {
+  background-color: rgb(123, 125, 126);
+  position: relative;
+}
+.main3 .this {
+  display: grid;
+  place-content: center;
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.main3 .that {
+  display: flex;
+  justify-content: center;
+}
+
+.contact {
+  display: flex;
+  margin-top: 2em;
+  cursor: pointer;
+}
+.contact li{
+  color: skyblue;
+  font-size: 2rem;
+}
+.contact li:hover {
+  color: thistle;
+  transform: translateY(10px);
+  transition: transform 0.5s linear;
+}
+.contact li a{
+  padding: 0 50px 20px;
+  color: skyblue;
+  font-size: 2rem;
+  text-decoration: none;
+}
+.main3 div code {
+  color: white;
+  font-size: 1em;
+}
+.timer {
+  display: flex;
+  justify-content: center;
+}
+.format {
+  background-color: blue;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 5px;
+  display: grid;
+  place-items: center;
+  color: white;
+  margin: 1em;
+}
+.format h4 {
+  font-size: 2em;
+}
+.top-btn{
+  width: 3.2rem;
+  height: 3.2rem;
+  animation: bounce 2s linear infinite;
+}
+@keyframes bounce{
+  0%{
+    transform: scale(0.5);
+  }
+   25%{
+    transform: scale(0.75);
+  }
+   50%{
+    transform: scale(1);
+  }
+   75%{
+    transform: scale(0.75);
+  }
+   100%{
+    transform: scale(0.5);
+  }
+}
+
+.line {
+  width: 100vw;
+  height: 4rem;
+  background-color: rgb(246, 206, 206);
+  color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (max-width:65rem){
+.main2 {
+  display: grid;
+  text-align: center;
+}
+.main2 > u > h2 {
+  margin-top: 1rem;
+  font-size: 2.5em;
+}
+.projects{
+  display: grid;
+  grid-template: repeat(3, 1fr)/repeat(2, 1fr);
+  grid-gap: 2em;
+  padding: 3em;
+}
+}
+@media (max-width:45rem){
+.main2 {
+  display: grid;
+  text-align: center;
+}
+.main2 > u > h2 {
+  margin-top: 1rem;
+  font-size: 2em;
+}
+.projects{
+  display: grid;
+  grid-template: repeat(6, 1fr)/repeat(1, 1fr);
+  grid-gap: 2em;
+  padding: 3em;
+}
+img {
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+}
+
+.main3 {
+  background-color: rgb(123, 125, 126);
+  position: relative;
+}
+.main3 .this {
+  display: grid;
+  place-content: center;
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2em;
+  cursor: pointer;
+}
+.contact li {
+  padding: 0 50px 20px;
+  color: skyblue;
+  font-size: 2em;
+  list-style: none;
+}
+.main2{
+  padding: 2em;
+}
+
+
+.hamburger{
+  position: relative;
+  display: block;
+}
+.navbar ul li.hamburger:hover {
+  transform: rotate(540deg);
+  background-color: crimson;
+  cursor: pointer;
+  transition: transform .7s linear;
+}
+.navbar ul li.hamburger:hover::before{
+  display: block;
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 1.5em;
+  height: 0.2em;
+  border-radius: 3px;
+  background-color: crimson;
+}
+.navbar ul li.hamburger:hover::after{
+  display: block;
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 1.5em;
+  height: 0.2em;
+  border-radius: 3px;
+  background-color: crimson;
+}
+
+.navbar ul li a {
+  display: none;
+}
+.navbar ul li a.show{
+  display: block;
+}
+.navbar ul li a.show:hover{
+  color: crimson;
+}
+
+.navbar ul li:not(:nth-child(5)):hover {
+  background-color: blue;
+}
+}
