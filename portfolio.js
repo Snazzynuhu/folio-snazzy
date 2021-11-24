@@ -2,9 +2,6 @@ const folios = [
     {img:"./Cymera2666.JPG",
     title:"Web Developer(Frontend)",
     proficiency:"HTML CSS JAVASCRIPT NODE REACT"},
-     {img:"./pictures/pass.jpg",
-    title:"Botanist",
-    proficiency:"Plant Taxonomy, Hybidization and Hydroponics set-up"},
      {img:"./pictures/fashionpreneur2.jpg",
     title:"Clothier",
     proficiency:"Highly skilled in the use of softwares such as ARTCUT and COREL-DRAW to create vinyl designs/vector images for t-shirt print"}
